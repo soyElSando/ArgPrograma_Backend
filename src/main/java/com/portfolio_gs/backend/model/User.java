@@ -12,6 +12,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Getter @Setter
 @Entity
@@ -31,10 +32,9 @@ public class User implements UserDetails{
     public User() {
     }
 
-    public User(String email, String password) {
-        
+    public User(String email, String password, PasswordEncoder passwordEncoder) {
         this.email = email;
-        this.password = password;
+        this.password = passwordEncoder.encode(password);
     }
 
     public String getEmail(){

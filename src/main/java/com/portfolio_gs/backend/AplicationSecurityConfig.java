@@ -24,8 +24,6 @@ public class AplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     private UserRepository userRepo;
     @Autowired
     private JwtTokenFilter jwtTokenFilter;
-    @Autowired
-    private PasswordEncoder passwordEncoder;
     
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -35,7 +33,6 @@ public class AplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(username -> userRepo.findByEmail(username)
                 .orElseThrow(() -> new UsernameNotFoundException("No se encontró el usuario"))
-                .passwordEncoder(passwordEncoder)
         );
     }
     @Override
