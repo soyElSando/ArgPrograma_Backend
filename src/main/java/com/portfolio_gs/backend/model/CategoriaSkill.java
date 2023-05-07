@@ -3,16 +3,10 @@ package com.portfolio_gs.backend.model;
 
 import com.sun.istack.NotNull;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import jakarta.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,7 +18,9 @@ public class CategoriaSkill implements Serializable {
     private Long idCatSkill;
     
     @NotNull
-    private String nombreCatSkill;
+    private String nombreCatSkillEs;
+    @NotNull
+    private String nombreCatSkillEn;
     
     /*@OneToMany(cascade = CascadeType.ALL, fetch= FetchType.EAGER, mappedBy = "catSkill")
     private Set<Skill> skills = new HashSet<>();*/
@@ -32,9 +28,10 @@ public class CategoriaSkill implements Serializable {
     public CategoriaSkill() {
     }
 
-    public CategoriaSkill(Long idCatSkill, String nombreSkill) {
+    public CategoriaSkill(Long idCatSkill, String nombreSkillEs,String nombreSkillEn ) {
         this.idCatSkill = idCatSkill;
-        this.nombreCatSkill = nombreSkill;
+        this.nombreCatSkillEs = nombreSkillEs;
+        this.nombreCatSkillEn = nombreSkillEn;
     }
     
     

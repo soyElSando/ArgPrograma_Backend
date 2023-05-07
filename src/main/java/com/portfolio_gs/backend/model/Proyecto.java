@@ -2,7 +2,6 @@ package com.portfolio_gs.backend.model;
 
 import com.sun.istack.NotNull;
 import java.io.Serializable;
-import javax.persistence.Column;
 import jakarta.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,20 +17,23 @@ public class Proyecto implements Serializable {
     private Long idProy;
     
     @NotNull
-    private String nombreProy;
-    private String descripcionProy;
-    private String fechaProy;
+    private String nombreProyEs;
+    @NotNull
+    private String nombreProyEn;
+    private String descripcionProyEs;
+    private String descripcionProyEn;
     private String imagenProy;
     private String linkProy;
 
     public Proyecto() {
     }
 
-    public Proyecto(Long idProy, String nombreProy, String descripcionProy, String fechaProy, String imagenProy, String linkProy) {
+    public Proyecto(Long idProy, String nombreProyEs,String nombreProyEn, String descripcionProyEs,String descripcionProyEn, String imagenProy, String linkProy) {
         this.idProy = idProy;
-        this.nombreProy = nombreProy;
-        this.descripcionProy = descripcionProy;
-        this.fechaProy = fechaProy;
+        this.nombreProyEs = nombreProyEs;
+        this.nombreProyEn = nombreProyEn;
+        this.descripcionProyEs = descripcionProyEs;
+        this.descripcionProyEn = descripcionProyEn;
         this.imagenProy = imagenProy;
         this.linkProy = linkProy;
     }

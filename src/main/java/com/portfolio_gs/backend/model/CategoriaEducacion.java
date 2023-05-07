@@ -17,14 +17,17 @@ public class CategoriaEducacion implements Serializable {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long idCatEdu;
     @NotNull
-    private String nombreCatEdu;
+    private String nombreCatEduEs;
+    @NotNull
+    private String nombreCatEduEn;
 
     public CategoriaEducacion() {
     }
 
-    public CategoriaEducacion(Long idCatEdu, String nombreCatEdu) {
+    public CategoriaEducacion(Long idCatEdu, String nombreCatEduEs, String nombreCatEduEn) {
         this.idCatEdu = idCatEdu;
-        this.nombreCatEdu = nombreCatEdu;
+        this.nombreCatEduEs = nombreCatEduEs;
+        this.nombreCatEduEn = nombreCatEduEn;
     }
     
     

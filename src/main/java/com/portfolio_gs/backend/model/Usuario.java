@@ -26,16 +26,17 @@ public class Usuario implements Serializable{
     @NotNull
     private String email;
     @NotNull
-    private String password;
-    private String backgroundImage;
+//    private String password;    
     private String linkIn;
     private String linkWP;
     private String linkGH;
     private String linkIG;
-    private String imagenPersonal;
+    private String avatar;
     
     @Column(length=2000)
-    private String descripcion;
+    private String descripcionEs;
+    @Column(length=2000)
+    private String descripcionEn;
     
     @OneToMany(fetch=FetchType.LAZY, mappedBy="idEdu")
     private List<Educacion> educacionesList;
@@ -54,19 +55,19 @@ public class Usuario implements Serializable{
     public Usuario() {
     }
 
-    public Usuario(Long id, String nombre, String profesion, String email, String password, String backgroundImage, String linkIn, String linkWP, String linkGH, String linkIG, String imagenPersonal, String descripcion) {
+    public Usuario(Long id, String nombre, String profesion, String email, String linkIn, String linkWP, String linkGH, String linkIG, String avatar, String descripcionEs, String descripcionEn) {
         this.id = id;
         this.nombre = nombre;
         this.profesion = profesion;
         this.email = email;
-        this.password = password;
-        this.backgroundImage = backgroundImage;
+//        this.password = password;
         this.linkIn = linkIn;
         this.linkWP = linkWP;
         this.linkGH = linkGH;
         this.linkIG = linkIG;
-        this.imagenPersonal = imagenPersonal;
-        this.descripcion = descripcion;
+        this.avatar = avatar;
+        this.descripcionEs = descripcionEs;
+        this.descripcionEn = descripcionEn;
     }
 
     

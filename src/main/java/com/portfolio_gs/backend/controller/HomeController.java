@@ -1,8 +1,8 @@
 
 package com.portfolio_gs.backend.controller;
 
-import com.portfolio_gs.backend.model.CategoriaEducacion;
-import com.portfolio_gs.backend.service.ICategoriaEducacionService;
+import com.portfolio_gs.backend.model.Home;
+import com.portfolio_gs.backend.service.IHomeService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -17,33 +17,30 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/CategoriasEducacion")
-@CrossOrigin(origins= "http://localhost:4200")
-
-public class CategoriaEducacionController {
+@RequestMapping("/Home")
+@CrossOrigin
+public class HomeController {
     @Autowired
-    private ICategoriaEducacionService interCatEdu;
+    private IHomeService interHome;
     
     @GetMapping("/todos")
     @ResponseBody
-    public List<CategoriaEducacion> leerCategoriasEducaciones(){
-        return interCatEdu.traerCategoriaEducacion();
+    public List<Home> leerHomes(){
+        return interHome.traerHomes();
     }
     
-    //Los siguientes endpoints no estàn implementados en el front.
     @PostMapping("/agregar")
-    public void agregarCategoriaEducacion(@RequestBody CategoriaEducacion catEdu){
-        interCatEdu.crearCategoriaEducacion(catEdu);
+    public void agregarHome(@RequestBody Home home){
+        interHome.crearHome(home);
     }
     
     @PutMapping("/editar")
-    public void editarCategoriaEducacion(@RequestBody CategoriaEducacion catEdu){
-        interCatEdu.editarCategoriaEducacion(catEdu);
+    public void editarHome(@RequestBody Home home){
+        interHome.editarHome(home);
     }
     
     @DeleteMapping("/eliminar/{id}")
-    public void eliminarCategoriaEducacion (@PathVariable Long id){
-        interCatEdu.borrarCategoriaEducacion(id);
+    public void eliminarHome (@PathVariable Long id){
+        interHome.borrarHome(id);
     }
-
 }

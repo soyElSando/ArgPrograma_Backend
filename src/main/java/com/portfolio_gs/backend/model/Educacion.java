@@ -2,7 +2,6 @@ package com.portfolio_gs.backend.model;
 
 import com.sun.istack.NotNull;
 import java.io.Serializable;
-import javax.persistence.Column;
 import jakarta.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,8 +22,11 @@ public class Educacion implements Serializable {
     private String institucion;
     private String logoInstitucion;
     @NotNull
-    private String titulo;
-    private String descripcion;
+    private String tituloEs;
+    @NotNull
+    private String tituloEn;
+    private String descripcionEs;
+    private String descripcionEn;
     private String inicio;
     private String fin; 
     
@@ -35,12 +37,14 @@ public class Educacion implements Serializable {
     public Educacion() {
     }
 
-    public Educacion(Long idEdu, String institucion, String logoInstitucion, String titulo, String descripcion, String inicio, String fin, CategoriaEducacion catEdu) {
+    public Educacion(Long idEdu, String institucion, String logoInstitucion, String tituloEs, String tituloEn, String descripcionEs, String descripcionEn, String inicio, String fin, CategoriaEducacion catEdu) {
         this.idEdu = idEdu;
         this.institucion = institucion;
         this.logoInstitucion = logoInstitucion;
-        this.titulo = titulo;
-        this.descripcion = descripcion;
+        this.tituloEs = tituloEs;
+        this.tituloEn = tituloEn;
+        this.descripcionEs = descripcionEs;
+        this.descripcionEn = descripcionEn;
         this.inicio = inicio;
         this.fin = fin;
         this.catEdu = catEdu;
