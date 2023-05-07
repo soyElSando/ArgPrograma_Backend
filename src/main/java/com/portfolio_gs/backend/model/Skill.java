@@ -2,7 +2,7 @@ package com.portfolio_gs.backend.model;
 
 import java.io.Serializable;
 import javax.persistence.Column;
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

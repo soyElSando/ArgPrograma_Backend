@@ -32,10 +32,11 @@ public class User implements UserDetails{
     public User() {
     }
 
-    public User(String email, String password, PasswordEncoder passwordEncoder) {
+        public User(String email, String password, PasswordEncoder passwordEncoder) {
         this.email = email;
         this.password = passwordEncoder.encode(password);
     }
+
 
     public String getEmail(){
         return this.email;
