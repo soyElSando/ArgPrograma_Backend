@@ -2,7 +2,7 @@ package com.portfolio_gs.backend.model;
 
 import com.sun.istack.NotNull;
 import java.io.Serializable;
-import jakarta.persistence.Entity;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -14,28 +14,28 @@ import lombok.Setter;
 public class Proyecto implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long idProy;
+    private Long id;
     
     @NotNull
-    private String nombreProyEs;
+    private String nombreEs;
     @NotNull
-    private String nombreProyEn;
-    private String descripcionProyEs;
-    private String descripcionProyEn;
-    private String imagenProy;
-    private String linkProy;
+    private String nombreEn;
+    private String descripcionEs;
+    private String descripcionEn;
+    private String imagen;
+    private String link;
 
     public Proyecto() {
     }
 
-    public Proyecto(Long idProy, String nombreProyEs,String nombreProyEn, String descripcionProyEs,String descripcionProyEn, String imagenProy, String linkProy) {
-        this.idProy = idProy;
-        this.nombreProyEs = nombreProyEs;
-        this.nombreProyEn = nombreProyEn;
-        this.descripcionProyEs = descripcionProyEs;
-        this.descripcionProyEn = descripcionProyEn;
-        this.imagenProy = imagenProy;
-        this.linkProy = linkProy;
+    public Proyecto(Long id, String nombreEs,String nombreEn, String descripcionEs,String descripcionEn, String imagen, String link) {
+        this.id = id;
+        this.nombreEs = nombreEs;
+        this.nombreEn = nombreEn;
+        this.descripcionEs = descripcionEs;
+        this.descripcionEn = descripcionEn;
+        this.imagen = imagen;
+        this.link = link;
     }
     
     

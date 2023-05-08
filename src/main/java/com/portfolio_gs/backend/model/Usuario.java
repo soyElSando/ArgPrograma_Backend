@@ -4,7 +4,7 @@ import com.sun.istack.NotNull;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Column;
-import jakarta.persistence.Entity;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -38,17 +38,17 @@ public class Usuario implements Serializable{
     @Column(length=2000)
     private String descripcionEn;
     
-    @OneToMany(fetch=FetchType.LAZY, mappedBy="idEdu")
-    private List<Educacion> educacionesList;
-    
-    @OneToMany(fetch=FetchType.LAZY, mappedBy="idExp")
-    private List<ExperienciaLaboral> experienciasList;
-    
-    @OneToMany(fetch=FetchType.LAZY, mappedBy="idSkill")
-    private List<Skill> skillsList;
-    
-    @OneToMany(fetch=FetchType.LAZY, mappedBy="idProy")
-    private List<Proyecto> proyectosList;
+//    @OneToMany(fetch=FetchType.LAZY, mappedBy="idEdu")
+//    private List<Educacion> educacionesList;
+//    
+//    @OneToMany(fetch=FetchType.LAZY, mappedBy="idExp")
+//    private List<ExperienciaLaboral> experienciasList;
+//    
+//    @OneToMany(fetch=FetchType.LAZY, mappedBy="idSkill")
+//    private List<Skill> skillsList;
+//    
+//    @OneToMany(fetch=FetchType.LAZY, mappedBy="id")
+//    private List<Proyecto> proyectosList;
     
     
 

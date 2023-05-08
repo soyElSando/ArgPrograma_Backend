@@ -3,35 +3,40 @@ package com.portfolio_gs.backend.model;
 
 import com.sun.istack.NotNull;
 import java.io.Serializable;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter @Setter
+@Entity
 public class Home implements Serializable {
  @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long idHome;
+    private Long id;
     
     @NotNull
-    private String nombreHomeEs;
+    private String nombreEs;
     @NotNull
-    private String nombreHomeEn;
-    private String descripcionHomeEs;
-    private String descripcionHomeEn;
-    private String imagenHome;
-    private String linkHome;
+    private String nombreEn;
+    private String descripcionEs;
+    private String descripcionEn;
+    private String imagen;
+    private String link;
 
     public Home() {
     }
 
-    public Home(Long idHome, String nombreHomeEs,String nombreHomeEn, String descripcionHomeEs,String descripcionHomeEn, String imagenHome, String linkHome) {
-        this.idHome = idHome;
-        this.nombreHomeEs = nombreHomeEs;
-        this.nombreHomeEn = nombreHomeEn;
-        this.descripcionHomeEs = descripcionHomeEs;
-        this.descripcionHomeEn = descripcionHomeEn;
-        this.imagenHome = imagenHome;
-        this.linkHome = linkHome;
+    public Home(Long id, String nombreEs,String nombreEn, String descripcionEs,String descripcionEn, String imagen, String link) {
+        this.id = id;
+        this.nombreEs = nombreEs;
+        this.nombreEn = nombreEn;
+        this.descripcionEs = descripcionEs;
+        this.descripcionEn = descripcionEn;
+        this.imagen = imagen;
+        this.link = link;
     }
        
 }

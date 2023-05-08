@@ -16,7 +16,7 @@ public class MailService {
         SimpleMailMessage message = new SimpleMailMessage();
 
         message.setCc(fromEmail);
-        message.setTo("leticia.portillo.r@gmail.com");
+        message.setTo("german.tito.sandoval@gmail.com");
         message.setText(body);
         message.setSubject("Consulta de "+ nombre +" desde Portfolio");
 

@@ -33,7 +33,7 @@ public class UsuarioController {
     public void editarUsuario(@RequestBody Usuario usuario){
     interUsuario.editarUsuario(usuario);
 }
-    @PostMapping("/agregar/usuario")
+    @PostMapping("/agregar")
     public void agregarUsuario(@RequestBody Usuario usuario){
         interUsuario.crearUsuario(usuario);
     }

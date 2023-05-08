@@ -1,7 +1,6 @@
 
 package com.portfolio_gs.backend.controller;
 
-import com.portfolio_gs.backend.model.Educacion;
 import com.portfolio_gs.backend.model.Mail;
 import com.portfolio_gs.backend.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;

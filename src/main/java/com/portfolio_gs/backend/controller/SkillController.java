@@ -24,7 +24,7 @@ public class SkillController {
     @Autowired
     private ISkillService interSkill;
     
-    @GetMapping("/todas")
+    @GetMapping("/todos")
     @ResponseBody
     public List<Skill> leerSkills(){
         return interSkill.traerSkills();
