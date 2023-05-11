@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/Home")
-@CrossOrigin
+@CrossOrigin(origins= "http://localhost:4200")
 public class HomeController {
     @Autowired
     private IHomeService interHome;
