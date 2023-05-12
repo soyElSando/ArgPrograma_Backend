@@ -2,7 +2,7 @@ package com.portfolio_gs.backend.model;
 
 import com.sun.istack.NotNull;
 import java.io.Serializable;
-// import java.util.List;
+//import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 //import javax.persistence.FetchType;
