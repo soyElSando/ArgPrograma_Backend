@@ -2,7 +2,7 @@
 package com.portfolio_gs.backend.security;
 
 import lombok.Getter;
-import lombok.Setter;
+//import lombok.Setter;
 
 @Getter
 public class AuthResponse {
