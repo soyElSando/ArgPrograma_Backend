@@ -6,7 +6,6 @@ com\portfolio_gs\backend\model\Usuario.class
 com\portfolio_gs\backend\service\ISkillService.class
 com\portfolio_gs\backend\service\IHomeService.class
 com\portfolio_gs\backend\service\CategoriaSkillService.class
-com\portfolio_gs\backend\WebConfig.class
 com\portfolio_gs\backend\AplicationSecurityConfig.class
 com\portfolio_gs\backend\service\EducacionService.class
 com\portfolio_gs\backend\service\IEducacionService.class
