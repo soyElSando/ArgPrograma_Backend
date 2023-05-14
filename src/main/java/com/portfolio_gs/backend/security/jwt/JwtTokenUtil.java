@@ -21,7 +21,8 @@ public class JwtTokenUtil {
     private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(JwtTokenUtil.class);
     private static final long EXPIRE_DURATION=12*60*60*1000;
     
-    @Value("${app.jwt.secret}")
+    //@Value("${app.jwt.secret}")
+    @Value("${JWT_SECRET}")
     private String secretKey;
     
     public String generateAccesToken(User user){
