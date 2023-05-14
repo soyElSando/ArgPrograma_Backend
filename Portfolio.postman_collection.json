@@ -1,0 +1,951 @@
+{
+	"info": {
+		"_postman_id": "f7284fc4-46fc-4638-8a55-8060b5042ff5",
+		"name": "Portfolio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21652086"
+	},
+	"item": [
+		{
+			"name": "Proyecto",
+			"item": [
+				{
+					"name": "Proyectos agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreEs\": \"Proyecto1\",\r\n    \"nombreEn\": \"Project 1\",\r\n    \"imagen\":\"https://lonelyplanetes.cdnstatics2.com/sites/default/files/fotos/Marruecos_Chefcahouen_500px_103832325_Gareth%20Bell_500px.jpg\",\r\n    \"descripcionEs\":\"Un proyecto de prueba1\",\r\n    \"descripcionEn\":\"Mock project 1\",\r\n    \"link\":\"https://www.youtube.com/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Proyectos/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Proyectos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Proyecto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Proyectos/todos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Proyectos",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Proyecto borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Proyectos/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Proyectos",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Proyecto editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"nombreEs\": \"Proyecto prueba\",\r\n    \"nombreEn\": \"Project Test\",\r\n    \"descripcionEs\": \"Un proyecto de prueba1\",\r\n    \"descripcionEn\": \"Mock project 1\",\r\n    \"imagen\": \"https://lonelyplanetes.cdnstatics2.com/sites/default/files/fotos/Marruecos_Chefcahouen_500px_103832325_Gareth%20Bell_500px.jpg\",\r\n    \"link\": \"https://www.youtube.com/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Proyectos/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Proyectos",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Home",
+			"item": [
+				{
+					"name": "Home agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreEs\": \"HOme2\",\r\n    \"nombreEn\": \"Home 2\",\r\n    \"imagen\":\"https://lonelyplanetes.cdnstatics2.com/sites/default/files/fotos/Marruecos_Chefcahouen_500px_103832325_Gareth%20Bell_500px.jpg\",\r\n    \"descripcionEs\":\"Un proyecto de prueba1\",\r\n    \"descripcionEn\":\"Mock project 1\",\r\n    \"link\":\"https://www.youtube.com/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Home/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Home",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Homes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Home/todos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Home",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Home borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Home/eliminar/13",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Home",
+								"eliminar",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Home editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 14,\r\n        \"nombreEs\": \"Promo 2\",\r\n        \"nombreEn\": \"Prom 2\",\r\n        \"descripcionEs\": \"Un proyecto de prueba1\",\r\n        \"descripcionEn\": \"Mock project 1\",\r\n        \"imagen\": \"https://lonelyplanetes.cdnstatics2.com/sites/default/files/fotos/Marruecos_Chefcahouen_500px_103832325_Gareth%20Bell_500px.jpg\",\r\n        \"link\": \"https://www.youtube.com/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Home/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Home",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Skills",
+			"item": [
+				{
+					"name": "Categoria",
+					"item": [
+						{
+							"name": "CatSkill agregar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"nombreCatSkillEs\":\"Tecnología Back-End\",\r\n   \"nombreCatSkillEn\":\"Back-End Tech\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/CategoriasSkill/agregar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CategoriasSkill",
+										"agregar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CatSkill Editar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idCatSkill\":7,\r\n  \"nombreCatSkillEs\":\"Tecnología Front-End\",\r\n   \"nombreCatSkillEn\":\"Front-End Technology\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/CategoriasSkill/editar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CategoriasSkill",
+										"editar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CatSkill Borrar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/CategoriasSkill/eliminar/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CategoriasSkill",
+										"eliminar",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CatSkill",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/CategoriasSkill/todos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CategoriasSkill",
+										"todos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Skill agregar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyLHBydWViYUBwcnVlYmEuY29tIiwiaXNzIjoic295RWxTYW5kbyIsImlhdCI6MTY4Mzg0OTgwNiwiZXhwIjoxNjgzODkzMDA2fQ.iugKfccOfwUTDuWBPh_X-oyvRKCERylurCOcxC6WuxaTaix6Oi9CarZAnUAtwG47OewrBXV8pCZKC5SrVnZH1Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreSkill\": \"React\",\r\n                    \"avance\": 70,\r\n    \"catSkill\":{\r\n        \"idCatSkill\": 5,\r\n        \"nombreCatSkillEs\": \"Tecnología Back-End\",\r\n        \"nombreCatSkillEn\": \"Back-End Tech\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Skills/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Skills",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skill editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idSkill\":20,\r\n    \"nombreSkill\": \"Inglés\",\r\n                    \"avance\": 70,\r\n    \"catSkill\":{\"idCatSkill\":6, \"nombreCatEdu\":\"Idiomas\"}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Skills/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Skills",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Skills/todos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Skills",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skill borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Skills/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Skills",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuario agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Germán Sandoval\",\r\n    \"email\": \"argentina@programa.com\",\r\n    \"profesion\": \"Desarrolladora Full Stack Jr.\",\r\n    \"linkIn\": \"https://www.linkedin.com/in/leticia-portillo-b62ba3103/\",\r\n    \"linkWP\":\"\",\r\n    \"linkGH\": \"https://github.com/soyElSando\",\r\n    \"linkIG\":\"https://instagram.com/ger.sando\",\r\n    \"descripcionEs\": \"La diversidad en la formación, en el trabajo y en los intereses es algo pasado de moda. Hoy no está bien visto porque se tiende a pensar que se es 'poco especialista'. Sin embargo, es algo de mi persona que valoro mucho. Admito ante la mirada del lector que mi formación es diversa en distintas áreas. Cuando digo áreas diversas digo artes, electrónica, redes, administración y digo desarrollo de software (por supuesto).\",\r\n    \"descripcionEn\": \"Diversity in training, work and interests is something out of fashion. Today it is not well seen because people tend to think that they are 'little specialists'. However, it is something of my person that I value a lot. I admit before the reader's gaze that my training is diverse in different areas. When I say diverse areas I say arts, electronics, networks, administration and I say software development (of course).\",\r\n    \"avatar\": \"assets/gerSando.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario editar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyLHBydWViYUBwcnVlYmEuY29tIiwiaXNzIjoic295RWxTYW5kbyIsImlhdCI6MTY4Mzk0Nzg3NSwiZXhwIjoxNjgzOTkxMDc1fQ.di7FE0C3HrjuU-fXBkR6MeafS_qFDJ26ukdYEYiBYyQrTpqL7jZb0zYb5-dE3-Dr8cUhSKnTmAHjNhyCxDEHJw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Germán Sandoval\",\r\n    \"profesion\": \"Desarrollador Full Stack Jr.\",\r\n    \"email\": \"argentina@programa.com\",\r\n    \"linkIn\": \"https://www.linkedin.com/in/german-sandoval-arg/\",\r\n    \"linkWP\": \"1161034092\",\r\n    \"linkGH\": \"https://github.com/soyElSando\",\r\n    \"linkIG\": \"https://instagram.com/ger.sando\",\r\n    \"avatar\": \"assets/gerSando.jpg\",\r\n    \"descripcionEs\": \"Soy una persona inquieta apasionada por la tecnología. Lo que me motiva a seguir estudiando es la idea de encontrar soluciones creativas a problemas de la vida de las personas y las empresas. Te invito a recorrer la sección de proyectos y escribirme tu consulta\",\r\n    \"descripcionEn\": \"I am a restless person passionate about technology. What motivates me to keep studying is the idea of finding creative solutions to problems in people's and companies' lives. I invite you to explore the projects section and write me your inquiry\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Leticia Portillo\",\r\n    \"profesion\": \"Desarrolladora Full Stack Jr.\",\r\n    \"email\": \"prueba@prueba.com\",\r\n    \"password\": \"prueba123\",\r\n    \"backgroundImage\": \"assets/conway.png\",\r\n    \"linkIn\": \"https://www.linkedin.com/in/leticia-portillo-b62ba3103/\",\r\n    \"linkWP\":\"\",\r\n    \"linkGH\": \"https://github.com/Letilita\",\r\n    \"linkIG\":\"https://instagram.com/letititbe?igshid=YmMyMTA2M2Y=\",\r\n    \"imagenPersonal\": \"assets/letiTransp1.png\",\r\n        \"descripcion\": \"La <strong>diversidad</strong> en la formación, en el trabajo y en los intereses es algo pasado de moda. Hoy no está bien visto porque se tiende a pensar que se es 'poco especialista'. Sin embargo, es algo de mi persona que valoro mucho. Admito ante la mirada del lector que mi formación es diversa en distintas áreas. Cuando digo áreas diversas digo filosofía, digo traducción, alemán, investigación de mercado, digo programación (por suepuesto), incluso digo Gastronomía! <br><br>Mis intereses variados me llevan siempre a saber de todo un poco y tener una visión comprehensiva y abarcadora en todo lo que hago. Allí lo positivo del caso. En el desarrollo de páginas web, ese es mi <strong>valor agregado </strong>.<br><br> Hace unos años comencé a sumergirme en el mundo de la programación, encontrando en el <strong>desarrollo Full Stack</strong> mi lugar.<br><br> Mi experiencia de 11 años en gestión operativa de proyectos de investigación de mercado y Customer Expierence me aportan practicidad y eficiencia.<br><br> Si bien no tengo mucha experiencia en el desarrollo de páginas web, soy responsable, detallista y autoexigente y esto se traduce en trabajos de calidad.Te invito a revisar mi portfolio para comprobarlo.<br><br> Para saber más, hacé clic en cada aspecto\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario/id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Experiencia",
+			"item": [
+				{
+					"name": "Experiencia agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empresa\":\"Wow\",\r\n    \"logoEmpresa\":\"assets/logo ipsos_v2.png\",\r\n    \"puestoEs\":\"Directora de Proyectos, Supervisora, Encuestadora telefónica\",\r\n    \"puestoEn\":\"Observer Head, Team Leader, Telemarketer\",\r\n    \"inicio\":\"marzo 2011\",\r\n    \"fin\":\"marzo 2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Experiencia/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Experiencia",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Experiencia editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idExp\": 15,\r\n        \"puestoEs\": \"Directora de Proyectos, Supervisora, Encuestadora telefónica\",\r\n        \"puestoEn\": \"Observer Head, Team Leader, Telemarketer\",\r\n        \"empresa\": \"Ipsos\",\r\n        \"logoEmpresa\": \"assets/logo ipsos_v2.png\",\r\n        \"inicio\": \"marzo 2011\",\r\n        \"fin\": \"marzo 2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Experiencia/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Experiencia",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Experiencias",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Experiencia/todos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Experiencia",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Experiencias borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Experiencia/eliminar/15",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Experiencia",
+								"eliminar",
+								"15"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Educacion",
+			"item": [
+				{
+					"name": "Caterorias",
+					"item": [
+						{
+							"name": "CatEdu agregar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"nombreCatEduEs\":\"Cursos\",\r\n   \"nombreCatEduEn\":\"Certificates\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/CategoriasEducacion/agregar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CategoriasEducacion",
+										"agregar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CatEdu editar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyLHBydWViYUBwcnVlYmEuY29tIiwiaXNzIjoic295RWxTYW5kbyIsImlhdCI6MTY4Mzk0Nzg3NSwiZXhwIjoxNjgzOTkxMDc1fQ.di7FE0C3HrjuU-fXBkR6MeafS_qFDJ26ukdYEYiBYyQrTpqL7jZb0zYb5-dE3-Dr8cUhSKnTmAHjNhyCxDEHJw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"idCatEdu\": 1,\r\n        \"nombreCatEduEs\": \"Educación formal\",\r\n        \"nombreCatEduEn\": \"Degrees\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/CategoriasEducacion/editar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CategoriasEducacion",
+										"editar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Categorias Edu",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/CategoriasEducacion/todos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CategoriasEducacion",
+										"todos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Categorias eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/CategoriasEducacion/eliminar/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CategoriasEducacion",
+										"eliminar",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Educacion agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"institucion\":\"Instituto Superior Lenguas Vivas\",\r\n    \"logoInstitucion\":\"assets/logoLenguasVidas.png\",\r\n    \"tituloEs\":\"Traductorado en alemán\",\r\n    \"tituloEn\":\"German translation\",\r\n    \"descripcionEs\": \"Estudios no finalizados\",\r\n    \"descripcionEn\": \"Studies not completed\",\r\n    \"inicio\":\"2015\",\r\n    \"fin\":\"2018\",\r\n    \"catEdu\":{\r\n        \"idCatEdu\": 17,\r\n        \"nombreCatEduEs\": \"Universidades\",\r\n        \"nombreCatEduEn\": \"Universities\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Educacion/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Educacion",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Educacion editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idEdu\": 18,\r\n        \"institucion\": \"UBA\",\r\n        \"logoInstitucion\": \"assets/logoUBA.png\",\r\n        \"tituloEs\": \"Licenciatura en Filosofía\",\r\n        \"tituloEn\": \"Bachelor of Philosophy\",\r\n        \"descripcionEs\": \"Estudios no finalizados\",\r\n        \"descripcionEn\": \"Studies not completed\",\r\n        \"inicio\": \"2008\",\r\n        \"fin\": \"2012\",\r\n        \"catEdu\": {\r\n            \"idCatEdu\": 17,\r\n            \"nombreCatEduEs\": \"Universidades\",\r\n            \"nombreCatEduEn\": \"Universities\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Educacion/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Educacion",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Educaciones",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Educacion/todos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Educacion",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Educacion borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/Educacion/eliminar/19",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Educacion",
+								"eliminar",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"prueba@prueba.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromEmail\":\"yo@bla.com\",\r\n    \"body\":\"Mail de prueba\",\r\n    \"nombre\":\"Leti\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Mail/enviar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Mail",
+						"enviar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
